@@ -1,5 +1,7 @@
 <h1> Welcome to my Awesome Web App</h1>
 
+<%= will_paginate @places, previous_label: h("<"), next_label: h(">") %>
+
 <% @places.each do |place| %>
   <div class=booyah-box col-10 offset-1>
     <h1><%= place.name %></h1>
@@ -7,4 +9,8 @@
     <p><%= place.description %></p><br />
   </div>
 
+
+
 <% end %>
+
+
