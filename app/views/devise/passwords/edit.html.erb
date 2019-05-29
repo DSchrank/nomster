@@ -6,7 +6,7 @@
   <%= f.input :reset_password_token, as: :hidden %>
   <%= f.full_error :reset_password_token %>
 
-  <div class="form-inputs">
+  <div class="form-inputs booyah-box col-10 offset-1">
     <%= f.input :password,
                 label: "New password",
                 required: true,
@@ -14,10 +14,11 @@
                 hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
                 input_html: { autocomplete: "new-password" } %>
     <%= f.input :password_confirmation, label: "Confirm your new password", required: true %>
+    <%= f.button :submit, "Change Password", class: 'btn btn-primary' %>  
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit, "Change my password" %>
+
   </div>
 <% end %>
 
