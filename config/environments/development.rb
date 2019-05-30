@@ -13,7 +13,7 @@ Rails.application.configure do
   config.cache_classes = false
 
   # Possible fix to restarting server every controller change
-  config.reload_classes_only_on_change = false
+  config.serve_static_assets = false
 
   
   # Do not eager load code on boot.
