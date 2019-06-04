@@ -51,7 +51,8 @@ group :development do
 end
 
 gem 'jquery-rails'
-
+gem "geocoder"
+gem "figaro"
 
 
 group :test do
