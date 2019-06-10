@@ -1,0 +1,11 @@
+  # const article = document.getElementById('api');
+  # const api_key = article.dataset.key;
+  # console.log(api_key);
+
+
+
+  
+<article
+  id="api"
+  data-key="AIzaSyCT5be1aVnmhx2Bec9TXt0lgFVEDQ9DA-g">
+</article>
