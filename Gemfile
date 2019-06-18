@@ -53,6 +53,7 @@ end
 gem 'jquery-rails'
 gem "geocoder"
 gem "figaro"
+gem 'carrierwave', '~> 1.0'
 
 
 group :test do
