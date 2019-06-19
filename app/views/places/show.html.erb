@@ -7,8 +7,7 @@
   <i><%= @place.address %></i>
   <br/><br/>
   <p><%= @place.description %></p>
-  <% @place.photo.each do |photo| %>
-    <%= image_tag photo.picture.url.to_s %>
+    <%= image_tag photo.picture.to_s %>
     <%= photo.caption %>
   <% end %>
 
