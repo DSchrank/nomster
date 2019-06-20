@@ -7,6 +7,7 @@
   <i><%= @place.address %></i>
   <br/><br/>
   <p><%= @place.description %></p>
+    <% @place.photos.each do |photo| %>
     <%= image_tag photo.picture.to_s %>
     <%= photo.caption %>
   <% end %>
@@ -51,6 +52,7 @@
 
 
 <br /> 
+<br />
 
   <div class="float-right">
   <% if current_user && current_user == @place.user %>
@@ -59,7 +61,18 @@
   <% end %>
   </div>
 <br>
+
+
+
+<div class="col-10 offset-1">
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary btn-sm float-right" data-toggle="modal" data-target="#myPhoto">
+    Add a Photo!
+  </button>
 </div>
+
+</div>
+
 
 
 <div class="clear"></div>
@@ -90,12 +103,6 @@
 </div>
 
 
-<div class="col-10 offset-1">
-  <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#myPhoto">
-    Add a Photo!
-  </button>
-</div>
 
 
 
