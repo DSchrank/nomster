@@ -7,7 +7,9 @@
     <h1><%= link_to place.name, place_path(place) %></h1><br />
     <i><%= place.address %></i><br /><br />
     <p><%= place.description %></p><br />
+    <% if place.photos.present? %>
        <%= image_tag place.photos.last.picture.to_s %>
+    <% end %>
 
     <% if place.user.present? %>
       <small><%= place.user.email %></small>
